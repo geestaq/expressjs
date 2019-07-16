@@ -1,0 +1,10 @@
+doctype html
+html
+    head
+        title="Logowanie"
+    body
+        h2 Aplikacja Google
+        if(user)
+            h3 Witaj, #{user.name}
+        else
+            a(href="/auth/google") Zaloguj przez Google
